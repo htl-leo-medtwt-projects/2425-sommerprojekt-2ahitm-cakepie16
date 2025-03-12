@@ -40,6 +40,9 @@ h1{
     font-family: var(--font-family-title);
 }
 
+p{
+    font-family: var(--font-family-text);
+}
 #boxen-mit-Bild{
     display: grid;
     grid-template-columns: auto auto;
