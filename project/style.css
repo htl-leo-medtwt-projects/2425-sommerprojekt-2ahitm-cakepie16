@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+:root{
+    --background-color-red: #CE1618;
+    --background-color-green: #029C38;
+    --background-color-light-green: #B5C4B1;
+    --background-color-light-red: #F4A7A3;
+    --color-normal-font: #000000;
+    --font-family-text: "Lato", sans-serif;
+    --font-family-title: "Merriweather", serif;
+
+}
+/* Header */
+.header img{
+    display: block;
+    margin: 2% auto;
+    width: 10%;
+}
+
+/* Navigation */
+.nav{
+    background-color: var(--background-color-light-green);
+    display: flex;
+    justify-content: space-around;
+}
+.nav a{
+    text-decoration: none;
+    color: var(--color-normal-font);
+    padding: 1%;
+    font-family: var(--font-family-text)
+}
+
+/* Kontent */
+
+
+h1{
+    font-family: var(--font-family-title);
+}
+
+#boxen-mit-Bild{
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+.box{
+    width: 50%;
+    height: 50vh;
+    background-color: var(--background-color-light-red);
+    margin: 2%;
+    
+}
+/* Footer */
+.footer{
+    background-color: var(--background-color-light-green);
+    font-family: var(--font-family-text);
+}
