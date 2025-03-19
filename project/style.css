@@ -5,6 +5,7 @@
     --background-color-light-green: #B5C4B1;
     --background-color-light-red: #F4A7A3;
     --color-normal-font: #000000;
+    --color-font-hover: #fff;
     --font-family-text: "Lato", sans-serif;
     --font-family-title: "Merriweather", serif;
 
@@ -35,12 +36,14 @@
     width: 70%;
 }
 
-h1{
+h1,h2{
     font-family: var(--font-family-title);
+    text-align: center;
 }
 
 p, div{
     font-family: var(--font-family-text);
+    text-align: center;
 }
 a{
     font-family: var(--font-family-text);
@@ -56,7 +59,12 @@ a{
     width: 30vw;
     height: 50vh;
     background-color: var(--background-color-light-red);
-    margin: 2%;   
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 .circle{
     background-color: var(--background-color-light-green);
@@ -72,15 +80,30 @@ a{
     width: 50%;
     margin: 10% 0% 0% 5%;
 }
-
-.button{
+/*Normal Button*/
+/*.button{
     background-color: var(--background-color-light-green);
     padding: 2%;
     border-radius: 5px;
     display: inline-block;
     text-align: center;
+}*/
+/*Button with border*/
+.button{
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 2%;
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    color: var(--color-normal-font);
+    transition: background-color 1s, color 1s;
 }
-
+.button:hover{
+    background-color: black;
+    color: var(--color-font-hover);
+}
 .boxen{
     display: flex;
     flex-direction: row;
@@ -90,6 +113,12 @@ a{
     width: 20%;
     background-color: grey;
     padding: 10%;
+}
+#box2{
+    background-color: var(--background-color-light-green);
+}
+.textBox{
+    text-transform: uppercase;
 }
 /* Footer */
 .footer{
