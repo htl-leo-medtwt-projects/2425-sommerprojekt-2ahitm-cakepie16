@@ -120,6 +120,30 @@ a{
 .textBox{
     text-transform: uppercase;
 }
+
+/*Slideshow*/
+#slideshow img{
+    width: 100%;
+    margin: 2% 0%;
+}
+
+/*Betrieb*/
+.person{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+.person img, .person div {
+    width: 40%;
+    margin-right: 10%;
+    
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 /* Footer */
 .footer{
     background-color: var(--background-color-light-green);
