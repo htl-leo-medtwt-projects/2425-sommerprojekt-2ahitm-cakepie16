@@ -10,6 +10,9 @@
     --font-family-title: "Merriweather", serif;
 
 }
+img{
+    width: 100%;
+}
 /* Header */
 .header img{
     display: block;
@@ -52,33 +55,37 @@ a{
 }
 #boxen-mit-Bild{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
+    margin: 2%;
 
+}
+#boxen-mit-Bild img{
+    height: 101vh;
 }
 .box{
     width: 30vw;
     height: 50vh;
     background-color: var(--background-color-light-red);
-    margin: 2%;
+    margin: 0% 0% 2% 0%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
-.circle{
-    background-color: var(--background-color-light-green);
+.circle img{
     border-radius: 100%;
-    height: 300px;
-    width: 300px;
+    width: 50%;
 }
 .cirle-text{
+    margin: 5% 10% 5% 0;
     display: flex;
     flex-direction: row;
+    gap: 0%;
 }
 .text{
-    width: 50%;
-    margin: 10% 0% 0% 5%;
+    width: 100%;
+    margin-top: 10%;
 }
 /*Normal Button*/
 /*.button{
@@ -107,12 +114,11 @@ a{
 .boxen{
     display: flex;
     flex-direction: row;
-    gap: 10%;
+    justify-content: space-around;
+    margin: 5% 0%;
 }
-.boxen div{
-    width: 20%;
-    background-color: grey;
-    padding: 10%;
+.boxen img{
+    width: 80%;
 }
 #box2{
     background-color: var(--background-color-light-green);
@@ -143,6 +149,10 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.bildheader{
+    width: 100%;
+    margin-bottom: 5%;
 }
 /* Footer */
 .footer{
