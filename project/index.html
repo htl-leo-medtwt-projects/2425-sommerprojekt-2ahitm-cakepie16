@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Landgärtnerei Ehmeier</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="script/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 <body>
     <!--Header-->
@@ -17,7 +20,7 @@
     <div class="nav">
         <a href="index.html">Startseite</a>
         <a href="pages/betrieb.html">Betrieb</a>
-        <a href="#">Unterseite</a>
+        <a href="pages/oeffnungszeiten.html">Öffnungszeiten</a>
         <a href="#">Unterseite</a>
         <a href="#">Unterseite</a>
         <a href="#">Unterseite</a>
@@ -55,7 +58,16 @@
         </div>
         
         <!-- 3 Boxen mit Infos -->
-        <!--TODO: Klassen Namen ändern/verbessern-->
+        <section class="splide" class="boxen" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide"><img src="img/IMG_5755.JPG" alt="Chili"></li>
+                      <li class="splide__slide"><img src="img/IMG_5756.JPG" alt="Chili"></li>
+                      <li class="splide__slide"><img src="img/IMG_5759.JPG" alt="Chili"></li>
+                  </ul>
+            </div>
+          </section>
+
         <div class="boxen">
             <div>
                 <img src="img/IMG_5755.JPG" alt="Chili">
