@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="../script/maps.js" defer></script>
+
     <title>Landgärtnerei Ehmeier</title>
 </head>
 <body>
@@ -23,11 +27,12 @@
         <a href="#">Unterseite</a>
     </div>
     <!--Kontent-->
-    <div class="content">
+    <div class="content oeffnungszeiten">
         <h1>Öffnungszeiten</h1>
+        
         <h3>1. Februar bis 29. Juni und</h3>
-        <h3>15. September bis Ende Dezember: </h3>
-        <table>
+        <h3>15. September bis Ende Dezember:</h3>
+        <table class="oeffnungszeiten-table">
             <tr>
                 <td>Montag bis Freitag</td>
                 <td>8:00 - 12:00 und 13:00 - 17:00</td>
@@ -41,18 +46,20 @@
                 <td>Geschlossen</td>
             </tr>
         </table>
+    
         <h3>Jänner:</h3>
-        <table>
+        <table class="oeffnungszeiten-table">
             <tr>
                 <td>Ganztags</td>
                 <td>Geschlossen</td>
             </tr>
             <tr>
-                <td>Telefonische Voranmeldung möglich!  (07243 57187)</td>
+                <td colspan="2" class="info">Telefonische Voranmeldung möglich! (07243 57187)</td>
             </tr>
         </table>
+    
         <h3>30. Juni bis 14. September:</h3>
-        <table>
+        <table class="oeffnungszeiten-table">
             <tr>
                 <td>Montag bis Samstag</td>
                 <td>8:00 - 12:00</td>
@@ -62,6 +69,8 @@
                 <td>Geschlossen</td>
             </tr>
         </table>
+
+        <div id="map"></div>
     </div>
 
     <!--Footer-->

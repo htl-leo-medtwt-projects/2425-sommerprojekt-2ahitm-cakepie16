@@ -4,4 +4,4 @@ var splide = new Splide( '.splide', {
     perMove: 1,
   } );
   
-  splide.mount();
+splide.mount();
