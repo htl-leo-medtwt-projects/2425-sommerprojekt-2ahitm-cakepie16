@@ -1,7 +1,9 @@
+var map = L.map('map').setView([48.216694, 14.085694], 17);
 
-var map = L.map('map').setView([51.505, -0.09], 13);
-var marker = L.marker([51.5, -0.09]).addTo(map);
+var marker = L.marker([48.216694, 14.085694]).addTo(map);
+
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 19,
+  maxZoom: 15,
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+//marker.bindPopup("Landgärtnerei Ehmeier").openPopup();

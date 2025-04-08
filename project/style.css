@@ -77,6 +77,12 @@ a{
     align-items: center;
 
 }
+#box2{
+    background-color: var(--background-color-light-green);
+}
+.textBox{
+    text-transform: uppercase;
+}
 .circle img{
     border-radius: 100%;
     width: 50%;
@@ -112,21 +118,29 @@ a{
 .button:active {
     transform: scale(0.9);
 }
-.boxen{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.splide.boxen {
     margin: 5% 0%;
 }
-.boxen img{
+
+.splide__slide img {
     width: 80%;
+    margin: 0 auto;
+    display: block;
 }
-#box2{
-    background-color: var(--background-color-light-green);
+.bildheader-slider {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 0;
 }
-.textBox{
-    text-transform: uppercase;
+
+.bildheader-slider .splide__slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
+
 
 /*Slideshow*/
 #slideshow img{
@@ -163,7 +177,7 @@ a{
 }
 
 .oeffnungszeiten-table {
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
     margin: 2% 0%;
 }
@@ -194,8 +208,7 @@ a{
 #map{
     height: 50vh;
     width: 50%;
-    display: block;
-    margin: 2% auto;
+    margin: 2%;
 }
 
 /* Footer */
