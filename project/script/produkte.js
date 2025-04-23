@@ -131,15 +131,109 @@ let ooeGaertnerProdukte  = [
                        <p>Nach dem Einebnen von Erdhügeln sorgt die erste Startdüngung für frische Nährstoffe, unterstützt den Neuaustrieb und stärkt das Pflanzengewebe. Der Rasen wird wieder schneller dicht und strapazierfähig.</p>
                        `
       }
-      
-      
-      
-      
+]
+let herbs = [
+  {
+    name: "Strauchbasilikum",
+    beschreibung: `<p>eine robuste und kompakte Pflanze</p>
+                  <p>Die Blätter sind aufgrund ihres kräftigen Geschmackes </p>
+                  <p>Bienenfreund</p>`,
+    img: "../img/plants/Strauchbasilikum.png"
+  },
+  {
+    name: "Majoran",
+    beschreibung: `<p>Küchen u. Heilkraut</p>
+                  <p>Boden: nährstofreich, lehmiger durchlässiger Boden</p>
+                  <p>Kartoffelsuppe, Pizza, Pasta, Eintöpfe</p>
+                  <p>Einjährig, nicht völlig winterhart</p>`,
+    img: "../img/plants/Majoran.png"
+  },
+  {
+    name: "Colakraut",
+    beschreibung: `<p>Sonnig bis halbschattig</p>
+                  <p>Mehrjährig, winterhart</p>
+                  <p>Heimische Kraut:Eberraute</p>
+                  <p>Wird über die Jahr zum Strauch</p>
+                  <p>Geeignet für Sirup (Cola-Ersatz), Salatbeigaben</p>
+                  <p>Wirkung: verdauungsfördernd </p>`,
+    img: "../img/plants/Colakraut.png"
+  },
+  {
+    name: "Marrokanische Minze",
+    beschreibung: `<p>Mehrjährig</p>
+                  <p>Aromatische Teeminze</p>
+                  <p>Heimische Kraut:Eberraute</p>
+                  <p>Verwendung: Tee, Cocktail, Schokomousse, Salate</p>
+                  <p>Auch getrocknet bleibt das Aroma erhalten</p>`,
+    img: "../img/Marokananische_Minze.png"
+  },
+  {
+    name: "Ananassalbei",
+    beschreibung: `<p>Mehrjährig</p>
+                  <p>Aromatische Teeminze</p>
+                  <p>Heimische Kraut:Eberraute</p>
+                  <p>Verwendung: Tee, Cocktail, Schokomousse, Salate</p>
+                  <p>Auch getrocknet bleibt das Aroma erhalten</p>`,
+    img: "../img/plants/Ananassalbei.png"
+  },
+  {
+    name: "Micromeria",
+    beschreibung: `<p>arabisches Bergkraut</p>
+                  <p>Blätter und Blüten mit scharfem, minzigem Geschmack</p>
+                  <p>Nahrungsquelle für Bienen, Hummeln und andere Insekten</p>
+                  <p>duftende Blüten</p>
+                  <p>Mehrjährig</p>
+                  <p>Tee, orientalische Küche, Eintopf</p>
+                  <p>Zu Schafkäse, Salaten</p>`,
+    img: "../img/plants/Micromeria.png"
+  }
 
-      
-      
-
-      
-
-      
+]
+let vegetables = [
+  {
+    name: "Schlangengurke",
+    beschreibung: `<p>Ideal zum Kultivieren im Gewächshaus</p>
+                  <p>Hervorragend zum Rohverzehr geeignet</p>
+                  <p>Fruchtgröße 20- 35 cm</p>`,
+    img: "../img/plants/Schlangengurke.png"
+  },{
+    name: "Mini Wassermelone",
+    beschreibung: `<p>!!!</p>`,
+    img: "../img/plants/Mini_Wassermelone.png"
+  },
+  {
+    name: "Olly roter Block Paprika",
+    beschreibung: `<p>!!!</p>`,
+    img: "../img/plants/Olly_roter_Block.png"
+  }
+]
+let tomatoes = [
+  {
+    name: "Freilandtomate Martina",
+    beschreibung: `<p>Frühe Sorte</p>
+                  <p> perfekt für Freiland Fazit: das ist die ideale Salattomate, sie schmeckt fruchtig, das Fleisch ist saftig, sie sieht gut aus, ist gesund, braucht kein Dach über dem Kopf und lässt sich als eine der ersten Tomaten im Jahr ernten. Höhe um 2 m</p>`,
+    img: "../img/plants/Martina.png"
+  },
+  {
+    name: "Name",
+    beschreibung: `<p>!!!</p>`,
+    img: "../img/plants/Bild.png"
+  },
+  {
+    name: "Name",
+    beschreibung: `<p>!!!</p>`,
+    img: "../img/plants/Bild.png"
+  },
+  {
+    name: "Name",
+    beschreibung: `<p>!!!</p>`,
+    img: "../img/plants/Bild.png"
+  }
+]
+let chili = [
+  {
+    name: "Name",
+    beschreibung: `<p>!!!</p>`,
+    img: "../img/plants/Bild.png"
+  }
 ]
