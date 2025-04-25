@@ -186,6 +186,11 @@ let herbs = [
                   <p>Tee, orientalische Küche, Eintopf</p>
                   <p>Zu Schafkäse, Salaten</p>`,
     img: "../img/plants/Micromeria.png"
+  },
+  {
+    name: "Basilikum",
+    beschreibung: `<p>Basilikum ist ein wichtiges Gewürz für viele italienische Gerichte wie Pasta, Pizza, Tomatensauce oder Pesto</p>`,
+    img: "../img/plants/Basilikum.png"
   }
 
 ]
@@ -205,6 +210,33 @@ let vegetables = [
     name: "Olly roter Block Paprika",
     beschreibung: `<p>!!!</p>`,
     img: "../img/plants/Olly_roter_Block.png"
+  },
+  {
+    name: "Horngurke Kiwano",
+    beschreibung: `<p>Stachelgurke</p>
+                  <p>Sonniger Standort</p>
+                  <p>Pflegeleicht – robust</p>
+                  <p>Lagerfähige Früchte</p>
+                  <p>Grün ernten!</p>
+                  <p>Ernten: in 2 Hälften schneiden und löffeln!</p>
+                  <p>Roh – für Käse und Cocktails</p>`,
+    img: "../img/plants/Kiwano.png"
+  },
+  {
+    name: "Süßkartoffel",
+    beschreibung: `<p>Süßkartoffel Beauregard</p>
+                  <p>Beauregard ist die bekannteste Süßkartoffelsorte in Europa. Die Knollen haben ein orangefarbenes Fleisch.</p>
+                  <p>15 Knollen pro Quadratmeter im Freiland. Ausgepflanzt wurde erst Anfang Juni, geerntet Ende September.</p>
+                  <p>Standort: Sonne, Halbschatten</p>`,
+    img: "../img/plants/Suesskartoffel.png"
+  },
+  {
+    name: "Zitronengurke",
+    beschreibung: `<p>Obwohl Zitronengurken dank ihres exotischen Geschmacks etwas ganz Besonderes sind, sind sie noch nicht in vielen Gärten zu finden.</p>
+                  <p>Mit ihrem frisch-fruchtigen Geschmack verleihen sie jedem Salat eine besondere Note.</p>
+                  <p>Interessant wirkt vor allem auch die runde Form der Frucht mit ihrer zitronengelben Schale.</p>
+                  <p>Die leicht süßlich schmeckenden Zitronengurken sind aufgrund ihres hohen Wassergehaltes ebenfalls ein optimaler Durstlöscher und können, ähnlich wie ein Apfel, sogar mit Schale verzehrt werden.</p>`,
+    img: "../img/plants/Zitronengurke.png"
   }
 ]
 let tomatoes = [
@@ -215,25 +247,51 @@ let tomatoes = [
     img: "../img/plants/Martina.png"
   },
   {
-    name: "Name",
-    beschreibung: `<p>!!!</p>`,
-    img: "../img/plants/Bild.png"
+    name: "Ananas Tomate",
+    beschreibung: `<p>sehr groß</p> 
+                  <p>orange - gelb</p>
+                  <p>kernlos</p>`,
+    img: "../img/plants/Ananastomate.png"
   },
   {
-    name: "Name",
+    name: "Cocktailtomate rot",
     beschreibung: `<p>!!!</p>`,
-    img: "../img/plants/Bild.png"
+    img: "../img/plants/Cocktail_rot.png"
   },
   {
-    name: "Name",
+    name: "Fleischtomate Marsilia",
+    beschreibung: `<p>alte französische Sorte</p>
+                   <p>Gewicht von etwa 250 bis 300 Gramm aus.</p>
+                   <p>Ihr Geschmack ist süß und aromatisch, was sie ideal für den Frischverzehr, in Salaten oder für die 	Zubereitung von Saucen</p>`,
+    img: "../img/plants/Freilandtomate_Marsilia.png"
+  },
+  {
+    name: "Ochsenherz",
     beschreibung: `<p>!!!</p>`,
-    img: "../img/plants/Bild.png"
+    img: "../img/plants/Ochsenherz.png"
   }
 ]
 let chili = [
   {
-    name: "Name",
-    beschreibung: `<p>!!!</p>`,
-    img: "../img/plants/Bild.png"
+    name: "Baumchili",
+    beschreibung: `<p>Schärfegrad 7-8</p>
+                   <p>Sehr ertragreich</p>
+                   <p>Überwintert sehr gut- kann 15 Jahre alt werden</p>`,
+    img: "../img/plants/Baumchili.png"
+  },
+  {
+    name: "Carolina Reaper",
+    beschreibung: `<p>Schärfegrad 10+++</p>
+                   <p>Schärfster Chili der Welt</p>
+                   <p>2,2 Millionen Scoville</p>
+                   <p> sehr gut zum Trocknen</p>`,
+    img: "../img/plants/Caroliner_Reaper.png"
+  },
+  {
+    name: "Chili Capela - Kirschchili",
+    beschreibung: `<p> Schärfegrad 7</p>
+                   <p> Sehr ertragreich</p>
+                   <p> Aromatische kleine Chili</p>`,
+    img: "../img/plants/Kirschchili.png"
   }
 ]
