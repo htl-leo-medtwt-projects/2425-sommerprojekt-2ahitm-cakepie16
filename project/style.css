@@ -119,11 +119,12 @@ a{
     transform: scale(0.9);
 }
 .splide.boxen {
-    margin: 5% 0%;
+    margin: 5% auto;
+    width: 95%;
 }
 
 .splide__slide img {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: block;
 }
@@ -141,12 +142,6 @@ a{
     object-fit: cover;
 }
 
-
-/*Slideshow*/
-#slideshow img{
-    width: 100%;
-    margin: 2% 0%;
-}
 
 /*Betrieb*/
 .person{
@@ -172,6 +167,10 @@ a{
 
 /*Öffnungszeiten*/
 
+#aktuelle-oeffnungszeiten{
+    width: 100%;
+}
+
 .oeffnungszeiten h3 {
     color: var(--background-color-red);
 }
@@ -179,7 +178,7 @@ a{
 .oeffnungszeiten-table {
     width: 80%;
     border-collapse: collapse;
-    margin: 2% 0%;
+    margin: 2% auto;
 }
 
 .oeffnungszeiten-table td {
