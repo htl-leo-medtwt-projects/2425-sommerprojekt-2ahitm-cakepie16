@@ -251,10 +251,25 @@ a{
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    box-sizing: border-box; 
 }
 
 .product img {
-    width: 50%;;
+    width: 50%;
+}
+
+.cart-icon {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: var(--background-color-green);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cart-icon:hover {
+    transform: scale(1.2);
 }
 
 /* Footer */

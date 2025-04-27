@@ -11,3 +11,40 @@ function showOOEProducts() {
   }
   document.getElementById('products').innerHTML = output
 }
+function showArray(category) {
+  let result = [];
+
+  switch (category) {
+      case 'herbs':
+          result = herbs;
+          break;
+      case 'chili':
+          result = chili;
+          break;
+      case 'vegetables':
+          result = vegetables;
+          break;
+      case 'tomatoes':
+          result = tomatoes;
+          break;
+      case 'ooeGaertnerProdukte':
+          result = ooeGaertnerProdukte;
+          break;
+      default:
+          result = [];
+  }
+
+  console.log(result);
+  let output = ""
+  for (let i = 0; i < result.length; i++) {
+    output += `
+    <div class="product">
+      <i class="fa fa-shopping-cart cart-icon"></i>
+      <img src="${result[i].img}">
+      <h2>${result[i].name}</h2>
+      <!--${result[i].beschreibung}-->
+    </div>`;
+    
+  }
+  document.getElementById('products').innerHTML = output
+}

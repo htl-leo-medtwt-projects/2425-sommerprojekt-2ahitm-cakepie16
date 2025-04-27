@@ -165,7 +165,7 @@ let herbs = [
                   <p>Heimische Kraut:Eberraute</p>
                   <p>Verwendung: Tee, Cocktail, Schokomousse, Salate</p>
                   <p>Auch getrocknet bleibt das Aroma erhalten</p>`,
-    img: "../img/Marokananische_Minze.png"
+    img: "../img/plants/Marokanische_Minze.png"
   },
   {
     name: "Ananassalbei",
