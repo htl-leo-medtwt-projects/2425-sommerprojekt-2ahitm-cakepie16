@@ -138,7 +138,8 @@ let herbs = [
     beschreibung: `<p>eine robuste und kompakte Pflanze</p>
                   <p>Die Blätter sind aufgrund ihres kräftigen Geschmackes </p>
                   <p>Bienenfreund</p>`,
-    img: "../img/plants/Strauchbasilikum.png"
+    img: "../img/plants/Strauchbasilikum.png",
+    price: 4
   },
   {
     name: "Majoran",
@@ -146,7 +147,8 @@ let herbs = [
                   <p>Boden: nährstofreich, lehmiger durchlässiger Boden</p>
                   <p>Kartoffelsuppe, Pizza, Pasta, Eintöpfe</p>
                   <p>Einjährig, nicht völlig winterhart</p>`,
-    img: "../img/plants/Majoran.png"
+    img: "../img/plants/Majoran.png",
+    price: 4
   },
   {
     name: "Colakraut",
@@ -156,7 +158,8 @@ let herbs = [
                   <p>Wird über die Jahr zum Strauch</p>
                   <p>Geeignet für Sirup (Cola-Ersatz), Salatbeigaben</p>
                   <p>Wirkung: verdauungsfördernd </p>`,
-    img: "../img/plants/Colakraut.png"
+    img: "../img/plants/Colakraut.png",
+    price: 4
   },
   {
     name: "Marrokanische Minze",
@@ -165,7 +168,8 @@ let herbs = [
                   <p>Heimische Kraut:Eberraute</p>
                   <p>Verwendung: Tee, Cocktail, Schokomousse, Salate</p>
                   <p>Auch getrocknet bleibt das Aroma erhalten</p>`,
-    img: "../img/plants/Marokanische_Minze.png"
+    img: "../img/plants/Marokanische_Minze.png",
+    price: 4
   },
   {
     name: "Ananassalbei",
@@ -174,7 +178,8 @@ let herbs = [
                   <p>Heimische Kraut:Eberraute</p>
                   <p>Verwendung: Tee, Cocktail, Schokomousse, Salate</p>
                   <p>Auch getrocknet bleibt das Aroma erhalten</p>`,
-    img: "../img/plants/Ananassalbei.png"
+    img: "../img/plants/Ananassalbei.png",
+    price: 4
   },
   {
     name: "Micromeria",
@@ -185,12 +190,14 @@ let herbs = [
                   <p>Mehrjährig</p>
                   <p>Tee, orientalische Küche, Eintopf</p>
                   <p>Zu Schafkäse, Salaten</p>`,
-    img: "../img/plants/Micromeria.png"
+    img: "../img/plants/Micromeria.png",
+    price: 4
   },
   {
     name: "Basilikum",
     beschreibung: `<p>Basilikum ist ein wichtiges Gewürz für viele italienische Gerichte wie Pasta, Pizza, Tomatensauce oder Pesto</p>`,
-    img: "../img/plants/Basilikum.png"
+    img: "../img/plants/Basilikum.png",
+    price: 4
   }
 
 ]
@@ -200,16 +207,19 @@ let vegetables = [
     beschreibung: `<p>Ideal zum Kultivieren im Gewächshaus</p>
                   <p>Hervorragend zum Rohverzehr geeignet</p>
                   <p>Fruchtgröße 20- 35 cm</p>`,
-    img: "../img/plants/Schlangengurke.png"
+    img: "../img/plants/Schlangengurke.png",
+    price: 4
   },{
     name: "Mini Wassermelone",
     beschreibung: `<p>!!!</p>`,
-    img: "../img/plants/Mini_Wassermelone.png"
+    img: "../img/plants/Mini_Wassermelone.png",
+    price: 4
   },
   {
     name: "Olly roter Block Paprika",
     beschreibung: `<p>!!!</p>`,
-    img: "../img/plants/Olly_roter_Block.png"
+    img: "../img/plants/Olly_roter_Block.png",
+    price: 4
   },
   {
     name: "Horngurke Kiwano",
@@ -220,7 +230,8 @@ let vegetables = [
                   <p>Grün ernten!</p>
                   <p>Ernten: in 2 Hälften schneiden und löffeln!</p>
                   <p>Roh – für Käse und Cocktails</p>`,
-    img: "../img/plants/Kiwano.png"
+    img: "../img/plants/Kiwano.png",
+    price: 4
   },
   {
     name: "Süßkartoffel",
@@ -228,7 +239,8 @@ let vegetables = [
                   <p>Beauregard ist die bekannteste Süßkartoffelsorte in Europa. Die Knollen haben ein orangefarbenes Fleisch.</p>
                   <p>15 Knollen pro Quadratmeter im Freiland. Ausgepflanzt wurde erst Anfang Juni, geerntet Ende September.</p>
                   <p>Standort: Sonne, Halbschatten</p>`,
-    img: "../img/plants/Suesskartoffel.png"
+    img: "../img/plants/Suesskartoffel.png",
+    price: 4
   },
   {
     name: "Zitronengurke",
@@ -236,7 +248,8 @@ let vegetables = [
                   <p>Mit ihrem frisch-fruchtigen Geschmack verleihen sie jedem Salat eine besondere Note.</p>
                   <p>Interessant wirkt vor allem auch die runde Form der Frucht mit ihrer zitronengelben Schale.</p>
                   <p>Die leicht süßlich schmeckenden Zitronengurken sind aufgrund ihres hohen Wassergehaltes ebenfalls ein optimaler Durstlöscher und können, ähnlich wie ein Apfel, sogar mit Schale verzehrt werden.</p>`,
-    img: "../img/plants/Zitronengurke.png"
+    img: "../img/plants/Zitronengurke.png",
+    price: 4
   }
 ]
 let tomatoes = [
@@ -244,31 +257,36 @@ let tomatoes = [
     name: "Freilandtomate Martina",
     beschreibung: `<p>Frühe Sorte</p>
                   <p> perfekt für Freiland Fazit: das ist die ideale Salattomate, sie schmeckt fruchtig, das Fleisch ist saftig, sie sieht gut aus, ist gesund, braucht kein Dach über dem Kopf und lässt sich als eine der ersten Tomaten im Jahr ernten. Höhe um 2 m</p>`,
-    img: "../img/plants/Martina.png"
+    img: "../img/plants/Martina.png",
+    price: 4
   },
   {
     name: "Ananas Tomate",
     beschreibung: `<p>sehr groß</p> 
                   <p>orange - gelb</p>
                   <p>kernlos</p>`,
-    img: "../img/plants/Ananastomate.png"
+    img: "../img/plants/Ananastomate.png",
+    price: 4
   },
   {
     name: "Cocktailtomate rot",
     beschreibung: `<p>!!!</p>`,
-    img: "../img/plants/Cocktail_rot.png"
+    img: "../img/plants/Cocktail_rot.png",
+    price: 4
   },
   {
     name: "Fleischtomate Marsilia",
     beschreibung: `<p>alte französische Sorte</p>
                    <p>Gewicht von etwa 250 bis 300 Gramm aus.</p>
                    <p>Ihr Geschmack ist süß und aromatisch, was sie ideal für den Frischverzehr, in Salaten oder für die 	Zubereitung von Saucen</p>`,
-    img: "../img/plants/Freilandtomate_Marsilia.png"
+    img: "../img/plants/Freilandtomate_Marsilia.png",
+    price: 4
   },
   {
     name: "Ochsenherz",
     beschreibung: `<p>!!!</p>`,
-    img: "../img/plants/Ochsenherz.png"
+    img: "../img/plants/Ochsenherz.png",
+    price: 4
   }
 ]
 let chili = [
@@ -277,7 +295,8 @@ let chili = [
     beschreibung: `<p>Schärfegrad 7-8</p>
                    <p>Sehr ertragreich</p>
                    <p>Überwintert sehr gut- kann 15 Jahre alt werden</p>`,
-    img: "../img/plants/Baumchili.png"
+    img: "../img/plants/Baumchili.png",
+    price: 4.5
   },
   {
     name: "Carolina Reaper",
@@ -285,13 +304,15 @@ let chili = [
                    <p>Schärfster Chili der Welt</p>
                    <p>2,2 Millionen Scoville</p>
                    <p> sehr gut zum Trocknen</p>`,
-    img: "../img/plants/Caroliner_Reaper.png"
+    img: "../img/plants/Caroliner_Reaper.png",
+    price: 4.5
   },
   {
     name: "Chili Capela - Kirschchili",
     beschreibung: `<p> Schärfegrad 7</p>
                    <p> Sehr ertragreich</p>
                    <p> Aromatische kleine Chili</p>`,
-    img: "../img/plants/Kirschchili.png"
+    img: "../img/plants/Kirschchili.png",
+    price: 4.5
   }
 ]
