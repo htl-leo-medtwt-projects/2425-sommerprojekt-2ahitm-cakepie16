@@ -183,6 +183,7 @@ function addItemToList(productName, category) {
 
   localStorage.setItem('products', JSON.stringify(shoppingList));
   console.log(`Produkt "${productName}" hinzugefügt.`);
+  showShoppingList()
 }
 
 function removeOne(productName) {
@@ -252,16 +253,17 @@ function showShoppingList() {
       output += `
         <div class="shopping-product">
           <img src="${image}" alt="${item.name}" class="shopping-img">
-          <div class="shopping-info">
+          <div>
             <div class="shopping-title">${item.name}</div>
             <div class="shopping-price">€ ${price}/Stk.</div>
           </div>
           <div class="shopping-count">
-            <button onclick="removeOne('${item.name}')">−</button>
-            <span>${item.count}</span>
-            <button onclick="addItemToList('${item.name}', '${item.category}')">+</button>
+            <div class="add_remove" onclick="removeOne('${item.name}')">-</div>
+            <div class="counter">${item.count}</div>
+            <div class="add_remove" onclick="addItemToList('${item.name}', '${item.category}')">+</div>
+            <div class="shopping-remove" onclick="removeAll('${item.name}')">x</div>
           </div>
-          <div class="shopping-remove" onclick="removeAll('${item.name}')">✖</div>
+          
         </div>`;
     }
   }
@@ -269,8 +271,22 @@ function showShoppingList() {
   output += `
     <div class="summary">
       <p>${totalItems} Produkte | <strong>€ ${total}</strong></p>
-      <button class="button">ABHOLEN</button>
+      <div class="button" onclick="showQRCode()">ABHOLEN</div>
+      <div id="qrcode"></div>
     </div>`;
 
   document.getElementById('product_page').innerHTML = output;
+}
+function showQRCode() {
+  let shoppingList = JSON.parse(localStorage['products'] || '[]');
+  let data = JSON.stringify(shoppingList);
+
+  // QR-Code Container leeren
+  document.getElementById("qrcode").innerHTML = "";
+
+  new QRCode(document.getElementById("qrcode"), {
+    text: data,
+    width: 200,
+    height: 200,
+  });
 }

@@ -277,55 +277,65 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 0;
+    padding: 2% 0%;
     border-bottom: 1px solid #ccc;
-  }
-  
-  .shopping-img {
-    width: 50px;
+}
+.shopping-product > div{
+    width: 32%;
+}  
+.shopping-img {
+    width: 30%;
     height: auto;
-  }
-  
-  .shopping-info {
-    flex-grow: 1;
-    padding-left: 1em;
-  }
-  
-  .shopping-title {
+}
+ 
+.shopping-title {
     font-weight: bold;
-  }
+}
   
-  .shopping-price {
+.shopping-price {
     font-size: 0.9em;
     color: gray;
-  }
+}
   
-  .shopping-count {
+.shopping-count {
     display: flex;
     align-items: center;
-    gap: 0.5em;
-  }
-  
-  .shopping-count button {
-    padding: 0.3em 0.5em;
+    gap: 2%;
+    width: 90%;
+}
+.shopping-count div{
+    padding: 5%;
+}
+.add_remove {
     border: none;
     background-color: var(--background-color-green);
     color: white;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
   
-  .shopping-remove {
+.shopping-remove {
     cursor: pointer;
     color: red;
-    font-size: 1.2em;
-  }
+    font-size: 1.5em;
+}
   
-  .summary {
-    padding-top: 1em;
+.summary {
     text-align: center;
-  }
+}
   
+.counter{
+    border: solid black 2px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+#qrcode{
+    width: 30%;
+    display: block;
+    margin: 2% auto;
+}
 /* Footer */
 .footer{
     background-color: var(--background-color-light-green);
