@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../script/script.js" defer></script>
     <title>Landgärtnerei Ehmeier</title>
 </head>
 <body>
@@ -14,7 +15,8 @@
     </a>
     
     <!--Navigation-->
-    <div class="nav">
+
+    <div class="nav desktop-nav">
         <a href="../index.html">Startseite</a>
         <a href="betrieb.html">Betrieb</a>
         <a href="oeffnungszeiten.html">Öffnungszeiten</a>
@@ -22,6 +24,20 @@
         <a href="#">Unterseite</a>
         <a href="#">Unterseite</a>
     </div>
+
+    <!-- Mobile Navigation -->
+    <div class="nav mobile-nav">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="../index.html">Startseite</a>
+            <a href="betrieb.html">Betrieb</a>
+            <a href="oeffnungszeiten.html">Öffnungszeiten</a>
+            <a href="produkte.html">Produkte</a>
+            <a href="#">Unterseite</a>
+            <a href="#">Unterseite</a>
+        </div>
+    </div>
+
     <img src="../img/20240426_162629.jpg" alt="bild" class="bildheader">
     <!--Kontent-->
     <div class="content">

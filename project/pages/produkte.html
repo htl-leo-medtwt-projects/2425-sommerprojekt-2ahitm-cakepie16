@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../script/produkte.js" defer></script>
+    <script src="../script/script_products.js" defer></script>
     <script src="../script/script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <title>Landgärtnerei Ehmeier</title>
@@ -17,14 +18,27 @@
     </a>
     <i class="fa fa-shopping-cart cart-icon" onclick="showShoppingList()"></i>
     
-    <!--Navigation-->
-    <div class="nav">
+      <!-- Navigation -->
+      <div class="nav desktop-nav">
         <a href="../index.html">Startseite</a>
         <a href="betrieb.html">Betrieb</a>
         <a href="oeffnungszeiten.html">Öffnungszeiten</a>
         <a href="produkte.html">Produkte</a>
         <a href="#">Unterseite</a>
         <a href="#">Unterseite</a>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="nav mobile-nav">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="../index.html">Startseite</a>
+            <a href="betrieb.html">Betrieb</a>
+            <a href="oeffnungszeiten.html">Öffnungszeiten</a>
+            <a href="produkte.html">Produkte</a>
+            <a href="#">Unterseite</a>
+            <a href="#">Unterseite</a>
+        </div>
     </div>
     
     <!--Kontent-->

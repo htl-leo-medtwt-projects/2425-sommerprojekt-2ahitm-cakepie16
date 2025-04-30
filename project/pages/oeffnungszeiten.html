@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="../script/oeffnungszeiten.js" defer></script>
-
+    <script src="../script/script.js" defer=""></script>
     <title>Landgärtnerei Ehmeier</title>
 </head>
 <body>
@@ -17,8 +17,8 @@
         <img src="../img/logo.jpg" alt="Logo">
     </a>
     
-    <!--Navigation-->
-    <div class="nav">
+      <!-- Navigation -->
+      <div class="nav desktop-nav">
         <a href="../index.html">Startseite</a>
         <a href="betrieb.html">Betrieb</a>
         <a href="oeffnungszeiten.html">Öffnungszeiten</a>
@@ -26,6 +26,20 @@
         <a href="#">Unterseite</a>
         <a href="#">Unterseite</a>
     </div>
+
+    <!-- Mobile Navigation -->
+    <div class="nav mobile-nav">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="../index.html">Startseite</a>
+            <a href="betrieb.html">Betrieb</a>
+            <a href="oeffnungszeiten.html">Öffnungszeiten</a>
+            <a href="produkte.html">Produkte</a>
+            <a href="#">Unterseite</a>
+            <a href="#">Unterseite</a>
+        </div>
+    </div>
+
     <!--Kontent-->
     <div class="content oeffnungszeiten center">
         <h1>Öffnungszeiten</h1>

@@ -8,6 +8,7 @@
     <title>Landgärtnerei Ehmeier</title>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="script/slide_index.js" defer></script>
+    <script src="script/script.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 <body>
@@ -16,14 +17,27 @@
         <img src="img/logo.jpg" alt="Logo">
     </a>
     
-    <!--Navigation-->
-    <div class="nav">
+    <!-- Navigation -->
+    <div class="nav desktop-nav">
         <a href="index.html">Startseite</a>
         <a href="pages/betrieb.html">Betrieb</a>
         <a href="pages/oeffnungszeiten.html">Öffnungszeiten</a>
         <a href="pages/produkte.html">Produkte</a>
         <a href="#">Unterseite</a>
         <a href="#">Unterseite</a>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="nav mobile-nav">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Startseite</a>
+            <a href="pages/betrieb.html">Betrieb</a>
+            <a href="pages/oeffnungszeiten.html">Öffnungszeiten</a>
+            <a href="pages/produkte.html">Produkte</a>
+            <a href="#">Unterseite</a>
+            <a href="#">Unterseite</a>
+        </div>
     </div>
     <section class="splide bildheader-slider" aria-label="Header-Slider">
         <div class="splide__track">
