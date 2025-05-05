@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="../script/script.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="../script/maerkte.js" defer></script>
+    <script src="../script/script.js" defer=""></script>
     <title>Landgärtnerei Ehmeier</title>
 </head>
 <body>
@@ -14,14 +17,13 @@
         <img src="../img/logo.jpg" alt="Logo">
     </a>
     
-    <!--Navigation-->
-
-    <div class="nav desktop-nav">
+      <!-- Navigation -->
+      <div class="nav desktop-nav">
         <a href="../index.html">Startseite</a>
         <a href="betrieb.html">Betrieb</a>
         <a href="oeffnungszeiten.html">Öffnungszeiten</a>
         <a href="produkte.html">Produkte</a>
-        <a href="maertkte.html">Märtkte</a>
+        <a href="maertkte.html">Märkte</a>
         <a href="#">Unterseite</a>
     </div>
 
@@ -38,53 +40,20 @@
         </div>
     </div>
 
-    <img src="../img/20240426_162629.jpg" alt="bild" class="bildheader">
     <!--Kontent-->
-    <div class="content">
-        
-        
-        <!--Betrieb wird vorgestellt-->
-        <div>
-            <div class="person">
-                <img src="../img/Karin_Kempl.JPG" alt="Karin Kempl">
-                <div class="center">
-                    <h1>Karin Kempl</h1>
-                    <p>
-                        ist seit 2007 als Inhaberin und Leiterin der Landgärtnerei Ehmeier der Dreh- und Angelpunkt des Betriebes.
-                    </p>
-                    <p>Sie lernte das Gärtnern schon in Kindheitstagen kennen. Die Vollblutgärtnerin hat nach ihrem Betriebswirtschaftsstudium die Gärtnerausbildung am Ritzelhof 2008 abgeschlossen.
-                    </p>
-                </div>
-            </div>
+    <div class="content center">
+        <h1>Märkte</h1>
+        <h2>Leondinger Wochenmarkt</h2>
+        <p>jeden Samstag</p>
+        <p>7:00 - 12:00</p>
+        <p>Im Winter im Atrium des Rathauses  - im Sommer am Stadtplatz</p>
+        <div id="map1"></div>
+        <h2>Trauner Bauernmarkt</h2>
+        <p>jeden Freitag</p>
+        <p>13:00 - 17:00</p>
+        <p>in Traun in der Linzer Straße - hinter dem Rathaus Traun</p>
 
-            <div>
-                <div class="person person_center">
-                    <img src="../img/Peter_Kempl.jpg" alt="Peter Kempl">
-                    <div class="center">
-                        <h1>Peter Kempl</h1>
-                        <p>
-                            ist verantwortlich für die Marketing, Webpräsenz, Logistik, Technik, Heizung und Pflanzengesundheit unseres Betriebes.
-                        </p>
-                        <p>
-                            Seit seiner landwirtschaftlichen Ausbildung arbeitet er in der Produktentwicklung einer österreichischen Saatgutfirma - Seit 2011 nur noch in Teilzeit - er hat ja in der Landgärtnerei viel zu tun. 2014 konnte er seinen zweiten Bildungsweg am Ritzlhof als Gärtner abschließen
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="person">
-                <img src="../img/Brigitte_Ehmeier.png" alt="Brigitte Ehmeier">
-                <div class="center">
-                    <h1>Brigitte Ehmeier</h1>
-                    <p>
-                        die Senior Chefin und Mitbegründerin der Landgärtnerei Ehmeier unterstützt ihre Tochter in allen Bereichen - worüber wir uns sehr freuen.
-                    </p>
-                    <p>
-                        Sie ist für uns allen ein Vorbild aufgrund ihrer Ausdauer, ihrer langjährigen Erfahrung als Gärtnerin und ihrer hohen Kreativität als Floristin.
-                    </p>
-                </div>
-            </div>
-        </div>
+        <div id="map2"></div>
     </div>
 
     <!--Footer-->

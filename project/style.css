@@ -231,7 +231,7 @@ a{
     font-style: italic;
     color: #555;
 }
-#map{
+#map, #map1, #map2{
     height: 50vh;
     width: 50%;
     margin: 2%;
