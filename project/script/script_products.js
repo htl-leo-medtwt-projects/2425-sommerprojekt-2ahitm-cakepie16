@@ -23,11 +23,11 @@ function showArray(category) {
   }
 
   let output = "";
-  for (let i = 0; i < result.length; i++) {// onclick="showProduct(${result[i]})"
+  for (let i = 0; i < result.length; i++) {
     output += `
       <div class="product">
         <i class="fa fa-shopping-cart cart-icon" onclick="addItemToList('${result[i].name}', '${category}')"></i>
-        <div>
+        <div onclick="showProduct('${category}', ${i})">
           <img src="${result[i].img}">
           <h2>${result[i].name}</h2>
         </div>
@@ -36,15 +36,55 @@ function showArray(category) {
   }
   document.getElementById('products').innerHTML = output;
 }
-function showProduct(product) {
-  /*document.getElementById('products').innerHTML = `
-      <div>
-        <img src="${product.img}">
-        <h2>${product.name}</h2>
-        <p>${product.beschreibung}</p>
+function showProduct(category, index) {
+  let result = [];
+
+  switch (category) {
+    case 'herbs':
+      result = herbs;
+      break;
+    case 'chili':
+      result = chili;
+      break;
+    case 'vegetables':
+      result = vegetables;
+      break;
+    case 'tomatoes':
+      result = tomatoes;
+      break;
+    case 'ooeGaertnerProdukte':
+      result = ooeGaertnerProdukte;
+      break;
+    default:
+      result = [];
+  }
+  let product = result[index];
+
+  document.getElementById('products').innerHTML += `
+      <div class="product_close" onclick="openModal('${product.img}', '${product.name}', '${product.beschreibung}')">
+          <img src="${product.img}" alt="${product.name}">
+          <h2>${product.name}</h2>
+          <p>${product.beschreibung}</p>
       </div>
-  `;*/
+  `;
 }
+  function openModal(img, name, description) {
+      document.getElementById('productModal').style.display = 'block';
+      document.getElementById('modalImg').src = img;
+      document.getElementById('modalTitle').innerText = name;
+      document.getElementById('modalDescription').innerText = description;
+  }
+  
+  document.querySelector('.close').onclick = function() {
+      document.getElementById('productModal').style.display = 'none';
+  }
+  
+  window.onclick = function(event) {
+      if (event.target === document.getElementById('productModal')) {
+          document.getElementById('productModal').style.display = 'none';
+      }
+  }
+  
 function addItemToList(productName, category) {
   let shoppingList = JSON.parse(localStorage.getItem('products') || '[]');
   let found = false;

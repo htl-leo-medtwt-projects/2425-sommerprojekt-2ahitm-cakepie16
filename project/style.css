@@ -296,6 +296,63 @@ a{
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+/* Modal-Style */
+.modal {
+    display: none; /* Modal ist zunächst unsichtbar */
+    position: fixed;
+    z-index: 9999; /* Damit es über anderen Inhalten liegt */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Zentriert das Modal */
+    width: 80%;
+    max-width: 600px; /* Maximale Breite für größere Bildschirme */
+    background-color: rgba(0, 0, 0, 0.4); /* Halbtransparenter Hintergrund */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modalImg {
+    width: 100%; /* Bild im Modal anpassen */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#modalTitle {
+    font-family: var(--font-family-title);
+    color: var(--background-color-green);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#modalDescription {
+    font-family: var(--font-family-text);
+    font-size: 1em;
+    color: #333;
+}
+
 /*Einkaufsliste*/
 .shopping-product {
     display: flex;
@@ -380,8 +437,7 @@ a{
 }
 
 .markt-box p {
-    font-size: 1.1em;
-    margin: 0.5em 0;
+    margin: 1%;
 }
 
 
