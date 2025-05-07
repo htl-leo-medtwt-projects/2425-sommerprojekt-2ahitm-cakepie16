@@ -6,6 +6,7 @@
     --background-color-light-red: #F4A7A3;
     --color-normal-font: #000000;
     --color-font-hover: #fff;
+    --color-font-grey: #aaa;
     --font-family-text: "Lato", sans-serif;
     --font-family-title: "Merriweather", serif;
 
@@ -296,62 +297,59 @@ a{
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-/* Modal-Style */
+/*Modal/Pop-up Fenster*/
 .modal {
-    display: none; /* Modal ist zunächst unsichtbar */
-    position: fixed;
-    z-index: 9999; /* Damit es über anderen Inhalten liegt */
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); /* Zentriert das Modal */
-    width: 80%;
-    max-width: 600px; /* Maximale Breite für größere Bildschirme */
-    background-color: rgba(0, 0, 0, 0.4); /* Halbtransparenter Hintergrund */
-    padding: 20px;
-    border-radius: 8px;
+    display: none;
+    position: fixed; 
+    z-index: 2;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
 }
-
+  
 .modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
+    background-color: white;
+    margin: 2% auto;
+    padding: 1%;
+    border-radius: 12px;
+    width: 50%;
+    animation: fadeIn 0.3s ease-in-out;
     position: relative;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: var(--color-font-grey);
+    font-size: 1.8rem;
     font-weight: bold;
     cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
+  
 #modalImg {
-    width: 100%; /* Bild im Modal anpassen */
-    border-radius: 5px;
-    margin-bottom: 20px;
+    width: 40%;
 }
-
+  
 #modalTitle {
-    font-family: var(--font-family-title);
     color: var(--background-color-green);
-    font-size: 1.5em;
-    margin-bottom: 10px;
 }
 
-#modalDescription {
-    font-family: var(--font-family-text);
-    font-size: 1em;
-    color: #333;
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
 }
+  
 
 /*Einkaufsliste*/
 .shopping-product {
@@ -397,7 +395,7 @@ a{
   
 .shopping-remove {
     cursor: pointer;
-    color: red;
+    color: var(--background-color-red);
     font-size: 1.5em;
 }
   

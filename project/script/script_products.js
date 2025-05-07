@@ -27,64 +27,34 @@ function showArray(category) {
     output += `
       <div class="product">
         <i class="fa fa-shopping-cart cart-icon" onclick="addItemToList('${result[i].name}', '${category}')"></i>
-        <div onclick="showProduct('${category}', ${i})">
+        <div onclick="openModal('${result[i].img}', '${result[i].name}', \`${result[i].beschreibung}\`)">
           <img src="${result[i].img}">
           <h2>${result[i].name}</h2>
         </div>
-        <!--${result[i].beschreibung}-->
       </div>`;
   }
+  
   document.getElementById('products').innerHTML = output;
 }
-function showProduct(category, index) {
-  let result = [];
-
-  switch (category) {
-    case 'herbs':
-      result = herbs;
-      break;
-    case 'chili':
-      result = chili;
-      break;
-    case 'vegetables':
-      result = vegetables;
-      break;
-    case 'tomatoes':
-      result = tomatoes;
-      break;
-    case 'ooeGaertnerProdukte':
-      result = ooeGaertnerProdukte;
-      break;
-    default:
-      result = [];
-  }
-  let product = result[index];
-
-  document.getElementById('products').innerHTML += `
-      <div class="product_close" onclick="openModal('${product.img}', '${product.name}', '${product.beschreibung}')">
-          <img src="${product.img}" alt="${product.name}">
-          <h2>${product.name}</h2>
-          <p>${product.beschreibung}</p>
-      </div>
-  `;
+function openModal(img, name, description) {
+    document.getElementById('productModal').style.display = 'block';
+    document.getElementById('modalImg').src = img;
+    document.getElementById('modalTitle').innerHTML = name;
+    document.getElementById('modalDescription').innerHTML = description;
 }
-  function openModal(img, name, description) {
-      document.getElementById('productModal').style.display = 'block';
-      document.getElementById('modalImg').src = img;
-      document.getElementById('modalTitle').innerText = name;
-      document.getElementById('modalDescription').innerText = description;
+
+document.querySelector(".close").onclick = function () {
+  document.getElementById('productModal').style.display = 'none';
+};
+
+window.onclick = function (event) {
+  let modal = document.getElementById('productModal');
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
-  
-  document.querySelector('.close').onclick = function() {
-      document.getElementById('productModal').style.display = 'none';
-  }
-  
-  window.onclick = function(event) {
-      if (event.target === document.getElementById('productModal')) {
-          document.getElementById('productModal').style.display = 'none';
-      }
-  }
-  
+};
+
+
 function addItemToList(productName, category) {
   let shoppingList = JSON.parse(localStorage.getItem('products') || '[]');
   let found = false;
