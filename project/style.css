@@ -520,9 +520,35 @@ a{
     
 
     /*Startseite*/
-
+    #boxen-mit-Bild{
+        grid-template-columns: 1fr;
+        margin: 2%;
+    
+    }
+    .box{
+        width: 100%;  
+    }
+    
+    .circle img{
+        width: 100%;
+    }
+    .cirle-text{
+        flex-direction: column;
+    }
+    .text{
+        width: 100%;
+        margin-top: 10%;
+    }
 
     /*Produkte*/
+    
+    #options{
+        left: -17%;
+    }
+    
+    .product {
+        width: 100%;
+    }
 
     /*Navigation*/
     .desktop-nav {

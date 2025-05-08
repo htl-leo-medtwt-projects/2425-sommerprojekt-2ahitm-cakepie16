@@ -23,11 +23,10 @@ for (let i = 0; i < markets.length; i++) {
         <p>${markets[i].time}</p>
         <p>${markets[i].place}</p>
         ${markets[i].map}
-    </div>
-  `
+    </div>`;
   
 }
-document.getElementById('markets').innerHTML = output
+document.getElementById('markets').innerHTML = output;
 // Erste Karte
 var map1 = L.map('map1').setView([48.279167, 14.248083], 17);
 
