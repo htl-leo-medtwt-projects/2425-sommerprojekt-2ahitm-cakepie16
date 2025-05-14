@@ -101,8 +101,8 @@ function removeAll(productName) {
   showShoppingList();
 }
 
-function showShoppingList() {
-  let shoppingList = JSON.parse(localStorage.getItem('products') || '[]');
+function showShoppingList(externalList = null) {
+  let shoppingList = externalList || JSON.parse(localStorage.getItem('products') || '[]');
   let output = `<h2>Einkaufsliste</h2>`;
   let total = 0;
   let totalItems = 0;
@@ -111,28 +111,17 @@ function showShoppingList() {
     let item = shoppingList[i];
     let result = [];
 
-    if (item.category === 'herbs') {
-      result = herbs;
-    } else if (item.category === 'chili') {
-      result = chili;
-    } else if (item.category === 'vegetables') {
-      result = vegetables;
-    } else if (item.category === 'tomatoes') {
-      result = tomatoes;
-    } else if (item.category === 'ooeGaertnerProdukte') {
-      result = ooeGaertnerProdukte;
+    switch (item.category) {
+      case 'herbs': result = herbs; break;
+      case 'chili': result = chili; break;
+      case 'vegetables': result = vegetables; break;
+      case 'tomatoes': result = tomatoes; break;
+      case 'ooeGaertnerProdukte': result = ooeGaertnerProdukte; break;
     }
 
-    let product = undefined;
-    let found = false;
-    for (let j = 0; j < result.length; j++) {
-      if (!found && result[j].name === item.name) {
-        product = result[j];
-        found = true;
-      }
-    }
+    let product = result.find(p => p.name === item.name);
 
-    if (found) {
+    if (product) {
       let price = product.price;
       let image = product.img;
       let subtotal = price * item.count;
@@ -147,12 +136,14 @@ function showShoppingList() {
             <div class="shopping-price">€ ${price}/Stk.</div>
           </div>
           <div class="shopping-count">
-            <div class="add_remove" onclick="removeOne('${item.name}')">-</div>
-            <div class="counter">${item.count}</div>
-            <div class="add_remove" onclick="addItemToList('${item.name}', '${item.category}')">+</div>
-            <div class="shopping-remove" onclick="removeAll('${item.name}')">x</div>
+            ${externalList ? "" : `
+              <div class="add_remove" onclick="removeOne('${item.name}')">-</div>
+              <div class="counter">${item.count}</div>
+              <div class="add_remove" onclick="addItemToList('${item.name}', '${item.category}')">+</div>
+              <div class="shopping-remove" onclick="removeAll('${item.name}')">x</div>
+            `}
+            ${externalList ? `<div class="counter">${item.count}</div>` : ""}
           </div>
-          
         </div>`;
     }
   }
@@ -160,21 +151,25 @@ function showShoppingList() {
   output += `
     <div class="summary">
       <p>${totalItems} Produkte | <strong>€ ${total}</strong></p>
-      <div class="button" onclick="showQRCode()">ABHOLEN</div>
+      ${externalList ? "" : `<div class="button" onclick="showQRCode()">ABHOLEN</div>`}
       <div id="qrcode"></div>
     </div>`;
 
   document.getElementById('product_page').innerHTML = output;
 }
+
 function showQRCode() {
-  let shoppingList = JSON.parse(localStorage['products'] || '[]');
-  let data = JSON.stringify(shoppingList);
+  let shoppingList = JSON.parse(localStorage.getItem('products') || '[]');
+  let data = encodeURIComponent(JSON.stringify(shoppingList));
+
+  let url = window.location.origin + window.location.pathname + '?json=' + data;
 
   document.getElementById("qrcode").innerHTML = "";
 
   new QRCode(document.getElementById("qrcode"), {
-    text: data,
+    text: url,
     width: 200,
     height: 200,
   });
+  console.log(url)
 }
