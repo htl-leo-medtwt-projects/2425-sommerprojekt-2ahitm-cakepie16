@@ -448,8 +448,18 @@ a{
 }
 
 /*Saisonkalender*/
-
-
+#months{
+    display: flex;
+    flex-direction: row;
+}
+.month{
+    background-color: var(--background-color-light-red);
+    padding: 1%;
+    width: 8%;
+}
+.activeMonth{
+    background-color: var(--background-color-light-green);
+}
 /* Footer */
 .footer{
     background-color: var(--background-color-light-green);
