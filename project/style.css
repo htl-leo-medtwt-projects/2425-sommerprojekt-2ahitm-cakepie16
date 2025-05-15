@@ -416,27 +416,38 @@ a{
     margin: 2% auto;
 }
 /*Märkte*/
-.markt-box {
-    width: 100%;
+#markets{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#map1, #map2{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+#markets > div {
+    width: 30%;
     padding: 2% 5%;
-    margin: 2% 0;
+    margin: 2%;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    /*background-color: var(--background-color-light-green);*/
 }
 
-.markt-box:hover {
+#markets > div:hover {
     transform: scale(1.02);
 }
 
-.markt-box h2 {
-    color: var(--background-color-red);
+#markets > div h2 {
     margin-bottom: 1%;
 }
 
-.markt-box p {
+#markets > div p {
     margin: 1%;
 }
+
+/*Saisonkalender*/
 
 
 /* Footer */
@@ -525,6 +536,7 @@ a{
         margin: 2%;
     
     }
+
     .box{
         width: 100%;  
     }
@@ -532,9 +544,11 @@ a{
     .circle img{
         width: 100%;
     }
+
     .cirle-text{
         flex-direction: column;
     }
+
     .text{
         width: 100%;
         margin-top: 10%;
@@ -554,14 +568,36 @@ a{
     .desktop-nav {
         display: none;
     }
+
     .mobile-nav {
         display: block;
     }
+
     /* Header */
     .header img{
         width: 30%;
     }
     
+    /*Märkte*/
+    #markets{
+        flex-direction: column;
+    }
+
+    #markets > div {
+        width: 80%;
+    }
+
+    /*Footer*/
+    .containerFooter{
+        gap: 5%;
+        margin: 0% 3%;
+    }
+	.containerFooter h3{
+        font-size: small;
+    }
+    .containerFooter p{
+        font-size: small;
+    }
 
 }
 

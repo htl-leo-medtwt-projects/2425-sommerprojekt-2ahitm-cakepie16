@@ -17,7 +17,7 @@ let markets = [
 let output = ""
 for (let i = 0; i < markets.length; i++) {
   output += `
-    <div class="markt-box center">
+    <div>
         <h2>${markets[i].name}</h2>
         <p>jeden ${markets[i].weekday}</p>
         <p>${markets[i].time}</p>

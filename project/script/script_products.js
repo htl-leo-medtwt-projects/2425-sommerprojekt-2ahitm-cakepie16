@@ -173,3 +173,16 @@ function showQRCode() {
   });
   console.log(url)
 }
+window.onload = function () {
+  const params = new URLSearchParams(window.location.search);
+  const jsonData = params.get("json");
+
+  if (jsonData) {
+    try {
+      const parsedData = JSON.parse(decodeURIComponent(jsonData));
+      showShoppingList(parsedData); 
+    } catch (error) {
+      console.error("Ungültiges JSON in URL:", error);
+    }
+  }
+};
