@@ -55,7 +55,7 @@ window.onclick = function (event) {
 };
 
 
-function addItemToList(productName, category) {
+function addItemToList(productName, category, isShoppingList = false) {
   let shoppingList = JSON.parse(localStorage.getItem('products') || '[]');
   let found = false;
 
@@ -72,7 +72,13 @@ function addItemToList(productName, category) {
 
   localStorage.setItem('products', JSON.stringify(shoppingList));
   console.log(`Produkt "${productName}" hinzugefügt.`);
-  showShoppingList()
+  if(!isShoppingList){
+    showNotification();
+  }
+  else{
+    showShoppingList();
+  }
+  
 }
 
 function removeOne(productName) {
@@ -139,7 +145,7 @@ function showShoppingList(externalList = null) {
             ${externalList ? "" : `
               <div class="add_remove" onclick="removeOne('${item.name}')">-</div>
               <div class="counter">${item.count}</div>
-              <div class="add_remove" onclick="addItemToList('${item.name}', '${item.category}')">+</div>
+              <div class="add_remove" onclick="addItemToList('${item.name}', '${item.category}', true)">+</div>
               <div class="shopping-remove" onclick="removeAll('${item.name}')">x</div>
             `}
             ${externalList ? `<div class="counter">${item.count}</div>` : ""}
@@ -186,3 +192,13 @@ window.onload = function () {
     }
   }
 };
+
+function showNotification(message = "Produkt zur Einkaufsliste hinzugefügt") {
+  const notif = document.getElementById("notification");
+  notif.textContent = message;
+  notif.classList.add("show");
+
+  setTimeout(() => {
+    notif.classList.remove("show");
+  }, 2000); 
+}

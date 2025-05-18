@@ -5,8 +5,8 @@ function loadMonth() {
     let month = ""
     for (let i = 0; i < months.length;i++) {
         month += `
-        <div class="month" id="month${i}">
-            <p onclick="showMonth(${i})">${months[i]}</p>
+        <div class="month" id="month${i}"  onclick="showMonth(${i})">
+            <p>${months[i]}</p>
         </div>`;
     }
     document.getElementById('months').innerHTML = month;

@@ -350,6 +350,28 @@ a{
     }
 }
   
+.notification {
+  visibility: hidden;
+  background-color: var(--background-color-light-green); 
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 2%;
+  position: fixed;
+  z-index: 2;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.notification.show {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 /*Einkaufsliste*/
 .shopping-product {
@@ -424,6 +446,7 @@ a{
     display: block;
     width: 80%;
     margin: auto;
+    border-radius: 8px;
 }
 #markets > div {
     width: 30%;
@@ -460,6 +483,7 @@ a{
 .activeMonth{
     background-color: var(--background-color-light-green);
 }
+
 /* Footer */
 .footer{
     background-color: var(--background-color-light-green);
