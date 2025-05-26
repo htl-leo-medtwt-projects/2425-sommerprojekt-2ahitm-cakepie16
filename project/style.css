@@ -143,16 +143,19 @@ a{
 .button:active {
     transform: scale(0.9);
 }
+
 .splide.boxen {
     margin: 5% auto;
     width: 95%;
 }
+
 
 .splide__slide img {
     width: 70%;
     margin: 0 auto;
     display: block;
 }
+
 .bildheader-slider {
     position: relative;
     width: 100vw;
@@ -256,8 +259,9 @@ a{
 #options{
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: -15%;
+    position: absolute;
+    left: 3%;
+    width: 15%;
 }
 
 #options div:hover {
@@ -268,8 +272,6 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: relative;
-    top: -12vh;
 }
 
 .product {
@@ -563,7 +565,6 @@ a{
         margin: 2%;
     }
     
-
     /*Startseite*/
     #boxen-mit-Bild{
         grid-template-columns: 1fr;
@@ -588,10 +589,15 @@ a{
         margin-top: 10%;
     }
 
+    .splide.boxen {
+        width: 100%;
+    }
+
     /*Produkte*/
     
     #options{
         left: -17%;
+        display: none;
     }
     
     .product {
