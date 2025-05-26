@@ -261,7 +261,6 @@ a{
     flex-direction: column;
     position: absolute;
     left: 3%;
-    width: 15%;
 }
 
 #options div:hover {
@@ -596,8 +595,8 @@ a{
     /*Produkte*/
     
     #options{
-        left: -17%;
-        display: none;
+        position: relative;
+        /*display: none;*/
     }
     
     .product {
