@@ -485,25 +485,49 @@ a{
     background-color: var(--background-color-light-green);
 }
 
+
 #productList {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  margin: 5% 0%;
+  justify-content: center;
+  align-items: center;
+}
+.category-card {
+  width: 15%;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 2%;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  background-color: #fff;
+}
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.category-img {
+  width: 90%;
 }
 
-.productCard {
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    padding: 15px;
-    width: 250px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* Pflanzen im Modal */
+#modalPlants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  margin-top: 2%;
 }
-.productCard img {
-    max-width: 100%;
-    border-radius: 8px;
+.plant {
+  width: 20%;
+  text-align: center;
 }
-
+.plant img {
+  width: 100%;
+}
 
 
 
