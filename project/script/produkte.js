@@ -198,6 +198,67 @@ let herbs = [
     beschreibung: `<p>Basilikum ist ein wichtiges Gewürz für viele italienische Gerichte wie Pasta, Pizza, Tomatensauce oder Pesto</p>`,
     img: "../img/plants/Basilikum.png",
     price: 4
+  },
+  {
+    name: "Heiligenkraut",
+    beschreibung: `<p>Santolina</p>
+                  <p>Winterhart – trockenverträglich</p>
+                  <p>Zum Würzen von Fleisch-, und Nudelgerichten</p>
+                  <p>Im trockenen Zustand hält es Motten fern</p>
+                  <p>Frisches Kraut gegen Mücken</p>
+                  `,
+    img: "../img/plants/Heiligenkraut.png",
+    price: 4
+  },
+  {
+    name: "Olivenkraut",
+    beschreibung: `<p>Ein Gericht der mediterranen Küche.</p>
+                  <p>Das Olivenkraut passt hervorragend in Pestos oder Salatmarinaden.</p>
+                  <p>Mehrjährig</p>
+                  `,
+    img: "../img/plants/Olivenkraut.png",
+    price: 4
+  },
+  {
+    name: "Petersilie",
+    beschreibung: `<p>Halbschatten – bis sonniger Standort</p>
+                    <p>Boden sollte wasserdurchlässig, nährstoffreich</p>
+                    <p>Mag keine Trockenheit, aber auch keine Staunässe</p>
+                    <p>Zweijährig</p>
+                    <p>Allroundgewürz in der Küche</p>
+                    <p>Hoher Eisen- und Vitamingehalt</p>
+                    <p>Vorsicht bei Schwangerschaft</p>`,
+    img: "../img/plants/Petersilie.png",
+    price: 4
+  },
+  {
+    name: "Rosentymian",
+    beschreibung: `<p>Ein betörender Rosen-Duft.</p>
+                    <p>Die hell-rosafarbenen Blüten haben eine dunklere Zeichnung und erscheinen im Frühsommer.</p>
+                    <p>Sonnig - winterhart</p>
+                    `,
+    img: "../img/plants/Rosentymian.png",
+    price: 4
+  },
+  {
+    name: "Rucola",
+    beschreibung: `<p>Würzig-nussiger Geschmack mit leicht scharfer Note.</p>
+                    <p>Sonniger bis halbschattiger Standort, nährstoffreicher Boden.</p>
+                    <p>Schnellwüchsig – Ernte nach wenigen Wochen möglich.</p>
+                    <p>Einjährig, reich an Vitamin C und Eisen.</p>
+                    `,
+    img: "../img/plants/Rucola.png",
+    price: 4
+  },
+  {
+    name: "Zitronentymian",
+    beschreibung: `<p>Ein hervorragendes Küchenkraut!</p>
+                  <p>Passt gut zu Gemüse, Fisch und Meeresfrüchten.</p>
+                  <p>Für Garten oder Balkon geeignet.</p>
+                  <p>Pflegeleicht – liebt sonnige Standorte.</p>
+                  `,
+    img: "../img/plants/Zitronentymian.png",
+    price: 4
   }
 
 ]
@@ -249,6 +310,19 @@ let vegetables = [
                   <p>Interessant wirkt vor allem auch die runde Form der Frucht mit ihrer zitronengelben Schale.</p>
                   <p>Die leicht süßlich schmeckenden Zitronengurken sind aufgrund ihres hohen Wassergehaltes ebenfalls ein optimaler Durstlöscher und können, ähnlich wie ein Apfel, sogar mit Schale verzehrt werden.</p>`,
     img: "../img/plants/Zitronengurke.png",
+    price: 4
+  },
+  {
+    name: "Hokkaido",
+    beschreibung: `<p> Schale kann man essen!</p>`,
+    img: "../img/plants/Hokkaido.png",
+    price: 4
+  },
+  {
+    name: "Zuckermelone",
+    beschreibung: `<p>Süße Frucht</p>
+                  <p>Warmer Standort</p>`,
+    img: "../img/plants/Zuckermelone.png",
     price: 4
   }
 ]
@@ -313,6 +387,22 @@ let chili = [
                    <p> Sehr ertragreich</p>
                    <p> Aromatische kleine Chili</p>`,
     img: "../img/plants/Kirschchili.png",
+    price: 4.5
+  },
+  {
+    name: "Black Pearl",
+    beschreibung: `<p>Schärfegrad: 5-7</p>
+                   <p>wohlige, mittlere Schärfe macht sich dann im Mund breit und zaubert Ihnen ein Lächeln auf die Lippen.</p>
+                   <p>Denn Black Perl Chilis schmecken verdammt gut.</p>`,
+    img: "../img/plants/Black_Pearl.png",
+    price: 4.5
+  },
+  {
+    name: "Sarit Gat",
+    beschreibung: `<p>Schärfegrad 6</p>
+                   <p>lange, gelbe feste Früchte</p>
+                   <p>D sehr ertragreich </p>`,
+    img: "../img/plants/Sarit_Gat.png",
     price: 4.5
   }
 ]
