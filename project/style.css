@@ -456,7 +456,6 @@ a{
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    /*background-color: var(--background-color-light-green);*/
 }
 
 #markets > div:hover {
@@ -485,6 +484,11 @@ a{
     background-color: var(--background-color-light-green);
 }
 
+#content_saisonkalender{
+    display: block;
+    margin: auto;
+    width: 70%;
+}
 
 #productList {
   display: flex;
@@ -528,9 +532,6 @@ a{
 .plant img {
   width: 100%;
 }
-
-
-
 /* Footer */
 .footer{
     background-color: var(--background-color-light-green);
@@ -682,6 +683,50 @@ a{
     }
     .containerFooter p{
         font-size: small;
+    }
+
+    /*Saisonkalender*/
+    #months {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .month {
+        width: 22%;
+        margin: 1% 0;
+        padding: 2%;
+        text-align: center;
+    }
+
+    .category-card {
+        width: 45%;
+        margin-bottom: 4%;
+    }
+
+    .plant {
+        width: 45%;
+        margin-bottom: 4%;
+    }
+
+    .category-img {
+        width: 80%;
+    }
+
+    #productList {
+        gap: 4%;
+    }
+
+    #modalPlants {
+        gap: 4%;
+    }
+  
+    #content_saisonkalender{
+        width: 100%;
+    }
+
+    #plantModal{
+        width: 180%;
+        margin-left: -39%;
     }
 
 }
