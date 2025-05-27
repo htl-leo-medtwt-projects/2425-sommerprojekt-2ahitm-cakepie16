@@ -136,10 +136,11 @@ let herbs = [
   {
     name: "Strauchbasilikum",
     beschreibung: `<p>eine robuste und kompakte Pflanze</p>
-                  <p>Die Blätter sind aufgrund ihres kräftigen Geschmackes </p>
+                  <p>Die Blätter sind aufgrund ihres kräftigen Geschmackes</p>
                   <p>Bienenfreund</p>`,
     img: "../img/plants/Strauchbasilikum.png",
-    price: 4
+    price: 4,
+    months: [2, 3, 4, 5, 6, 7, 8]
   },
   {
     name: "Majoran",
@@ -148,7 +149,8 @@ let herbs = [
                   <p>Kartoffelsuppe, Pizza, Pasta, Eintöpfe</p>
                   <p>Einjährig, nicht völlig winterhart</p>`,
     img: "../img/plants/Majoran.png",
-    price: 4
+    price: 4,
+    months: [2, 3, 4, 5, 6]
   },
   {
     name: "Colakraut",
@@ -159,27 +161,22 @@ let herbs = [
                   <p>Geeignet für Sirup (Cola-Ersatz), Salatbeigaben</p>
                   <p>Wirkung: verdauungsfördernd </p>`,
     img: "../img/plants/Colakraut.png",
-    price: 4
+    price: 4,
+    months: [2, 3, 4, 5, 6]
   },
   {
     name: "Marrokanische Minze",
-    beschreibung: `<p>Mehrjährig</p>
-                  <p>Aromatische Teeminze</p>
-                  <p>Heimische Kraut:Eberraute</p>
-                  <p>Verwendung: Tee, Cocktail, Schokomousse, Salate</p>
-                  <p>Auch getrocknet bleibt das Aroma erhalten</p>`,
+    beschreibung: `!!!`,
     img: "../img/plants/Marokanische_Minze.png",
-    price: 4
+    price: 4,
+    months: [2, 3, 4, 5, 6]
   },
   {
     name: "Ananassalbei",
-    beschreibung: `<p>Mehrjährig</p>
-                  <p>Aromatische Teeminze</p>
-                  <p>Heimische Kraut:Eberraute</p>
-                  <p>Verwendung: Tee, Cocktail, Schokomousse, Salate</p>
-                  <p>Auch getrocknet bleibt das Aroma erhalten</p>`,
+    beschreibung: `!!!`,
     img: "../img/plants/Ananassalbei.png",
-    price: 4
+    price: 4,
+    months: [2, 3, 4, 5, 6]
   },
   {
     name: "Micromeria",
@@ -191,13 +188,15 @@ let herbs = [
                   <p>Tee, orientalische Küche, Eintopf</p>
                   <p>Zu Schafkäse, Salaten</p>`,
     img: "../img/plants/Micromeria.png",
-    price: 4
+    price: 4,
+    months: [2, 3, 4, 5, 6]
   },
   {
     name: "Basilikum",
     beschreibung: `<p>Basilikum ist ein wichtiges Gewürz für viele italienische Gerichte wie Pasta, Pizza, Tomatensauce oder Pesto</p>`,
     img: "../img/plants/Basilikum.png",
-    price: 4
+    price: 4,
+    months: [4, 5, 6, 7, 8]
   },
   {
     name: "Heiligenkraut",
@@ -208,7 +207,8 @@ let herbs = [
                   <p>Frisches Kraut gegen Mücken</p>
                   `,
     img: "../img/plants/Heiligenkraut.png",
-    price: 4
+    price: 4,
+    months: [2, 3, 4, 5, 6]
   },
   {
     name: "Olivenkraut",
@@ -217,7 +217,8 @@ let herbs = [
                   <p>Mehrjährig</p>
                   `,
     img: "../img/plants/Olivenkraut.png",
-    price: 4
+    price: 4,
+    months: [2, 3, 4, 5, 6]
   },
   {
     name: "Petersilie",
@@ -229,16 +230,18 @@ let herbs = [
                     <p>Hoher Eisen- und Vitamingehalt</p>
                     <p>Vorsicht bei Schwangerschaft</p>`,
     img: "../img/plants/Petersilie.png",
-    price: 4
+    price: 4,
+    months: [2, 3, 4, 5, 6]
   },
   {
-    name: "Rosentymian",
+    name: "Rosenthymian",
     beschreibung: `<p>Ein betörender Rosen-Duft.</p>
                     <p>Die hell-rosafarbenen Blüten haben eine dunklere Zeichnung und erscheinen im Frühsommer.</p>
                     <p>Sonnig - winterhart</p>
                     `,
     img: "../img/plants/Rosentymian.png",
-    price: 4
+    price: 4,
+    months: [2, 3, 4, 5, 6]
   },
   {
     name: "Rucola",
@@ -248,7 +251,8 @@ let herbs = [
                     <p>Einjährig, reich an Vitamin C und Eisen.</p>
                     `,
     img: "../img/plants/Rucola.png",
-    price: 4
+    price: 4,
+    months: [2, 3, 4, 5, 6]
   },
   {
     name: "Zitronentymian",
@@ -258,7 +262,8 @@ let herbs = [
                   <p>Pflegeleicht – liebt sonnige Standorte.</p>
                   `,
     img: "../img/plants/Zitronentymian.png",
-    price: 4
+    price: 4,
+    months: [2, 3, 4, 5, 6]
   }
 
 ]
@@ -269,18 +274,21 @@ let vegetables = [
                   <p>Hervorragend zum Rohverzehr geeignet</p>
                   <p>Fruchtgröße 20- 35 cm</p>`,
     img: "../img/plants/Schlangengurke.png",
-    price: 4
+    price: 4,
+    months: [3, 4, 5]
   },{
     name: "Mini Wassermelone",
-    beschreibung: `<p>!!!</p>`,
+    beschreibung: `<p>Kleine, süße Frucht – ideal für den Anbau auf Balkon oder im Hochbeet.</p>`,
     img: "../img/plants/Mini_Wassermelone.png",
-    price: 4
+    price: 4,
+    months: [3, 4, 5]
   },
   {
     name: "Olly roter Block Paprika",
-    beschreibung: `<p>!!!</p>`,
+    beschreibung: `<p>Ertragreiche Sorte mit süßem Geschmack – perfekt für Rohkost, Füllen oder Grillen.</p>`,
     img: "../img/plants/Olly_roter_Block.png",
-    price: 4
+    price: 4,
+    months: [3, 4, 5]
   },
   {
     name: "Horngurke Kiwano",
@@ -292,7 +300,8 @@ let vegetables = [
                   <p>Ernten: in 2 Hälften schneiden und löffeln!</p>
                   <p>Roh – für Käse und Cocktails</p>`,
     img: "../img/plants/Kiwano.png",
-    price: 4
+    price: 4,
+    months: [3, 4, 5]
   },
   {
     name: "Süßkartoffel",
@@ -301,7 +310,8 @@ let vegetables = [
                   <p>15 Knollen pro Quadratmeter im Freiland. Ausgepflanzt wurde erst Anfang Juni, geerntet Ende September.</p>
                   <p>Standort: Sonne, Halbschatten</p>`,
     img: "../img/plants/Suesskartoffel.png",
-    price: 4
+    price: 4,
+    months: [3, 4, 5]
   },
   {
     name: "Zitronengurke",
@@ -310,20 +320,23 @@ let vegetables = [
                   <p>Interessant wirkt vor allem auch die runde Form der Frucht mit ihrer zitronengelben Schale.</p>
                   <p>Die leicht süßlich schmeckenden Zitronengurken sind aufgrund ihres hohen Wassergehaltes ebenfalls ein optimaler Durstlöscher und können, ähnlich wie ein Apfel, sogar mit Schale verzehrt werden.</p>`,
     img: "../img/plants/Zitronengurke.png",
-    price: 4
+    price: 4,
+    months: [3, 4, 5]
   },
   {
     name: "Hokkaido",
     beschreibung: `<p> Schale kann man essen!</p>`,
     img: "../img/plants/Hokkaido.png",
-    price: 4
+    price: 4,
+    months: [3, 4, 5]
   },
   {
     name: "Zuckermelone",
     beschreibung: `<p>Süße Frucht</p>
                   <p>Warmer Standort</p>`,
     img: "../img/plants/Zuckermelone.png",
-    price: 4
+    price: 4,
+    months: [3, 4, 5]
   }
 ]
 let tomatoes = [
@@ -332,7 +345,8 @@ let tomatoes = [
     beschreibung: `<p>Frühe Sorte</p>
                   <p> perfekt für Freiland Fazit: das ist die ideale Salattomate, sie schmeckt fruchtig, das Fleisch ist saftig, sie sieht gut aus, ist gesund, braucht kein Dach über dem Kopf und lässt sich als eine der ersten Tomaten im Jahr ernten. Höhe um 2 m</p>`,
     img: "../img/plants/Martina.png",
-    price: 4
+    price: 4,
+    months: [3, 4, 5]
   },
   {
     name: "Ananas Tomate",
@@ -340,13 +354,15 @@ let tomatoes = [
                   <p>orange - gelb</p>
                   <p>kernlos</p>`,
     img: "../img/plants/Ananastomate.png",
-    price: 4
+    price: 4,
+    months: [3, 4, 5]
   },
   {
     name: "Cocktailtomate rot",
-    beschreibung: `<p>!!!</p>`,
+    beschreibung: `<p>Kleine, aromatische Früchte – ideal zum Naschen oder für Salate.</p>`,
     img: "../img/plants/Cocktail_rot.png",
-    price: 4
+    price: 4,
+    months: [3, 4, 5]
   },
   {
     name: "Fleischtomate Marsilia",
@@ -354,13 +370,15 @@ let tomatoes = [
                    <p>Gewicht von etwa 250 bis 300 Gramm aus.</p>
                    <p>Ihr Geschmack ist süß und aromatisch, was sie ideal für den Frischverzehr, in Salaten oder für die 	Zubereitung von Saucen</p>`,
     img: "../img/plants/Freilandtomate_Marsilia.png",
-    price: 4
+    price: 4,
+    months: [3, 4, 5]
   },
   {
     name: "Ochsenherz",
-    beschreibung: `<p>!!!</p>`,
+    beschreibung: `<p>Fleischige, große Früchte mit mild-süßem Geschmack – ideal für Caprese oder Sandwiches.</p>`,
     img: "../img/plants/Ochsenherz.png",
-    price: 4
+    price: 4,
+    months: [3, 4, 5]
   }
 ]
 let chili = [
@@ -370,7 +388,8 @@ let chili = [
                    <p>Sehr ertragreich</p>
                    <p>Überwintert sehr gut- kann 15 Jahre alt werden</p>`,
     img: "../img/plants/Baumchili.png",
-    price: 4.5
+    price: 4.5,
+    months: [3, 4, 5]
   },
   {
     name: "Carolina Reaper",
@@ -379,7 +398,8 @@ let chili = [
                    <p>2,2 Millionen Scoville</p>
                    <p> sehr gut zum Trocknen</p>`,
     img: "../img/plants/Caroliner_Reaper.png",
-    price: 4.5
+    price: 4.5,
+    months: [3, 4, 5]
   },
   {
     name: "Chili Capela - Kirschchili",
@@ -387,7 +407,8 @@ let chili = [
                    <p> Sehr ertragreich</p>
                    <p> Aromatische kleine Chili</p>`,
     img: "../img/plants/Kirschchili.png",
-    price: 4.5
+    price: 4.5,
+    months: [3, 4, 5]
   },
   {
     name: "Black Pearl",
@@ -395,7 +416,8 @@ let chili = [
                    <p>wohlige, mittlere Schärfe macht sich dann im Mund breit und zaubert Ihnen ein Lächeln auf die Lippen.</p>
                    <p>Denn Black Perl Chilis schmecken verdammt gut.</p>`,
     img: "../img/plants/Black_Pearl.png",
-    price: 4.5
+    price: 4.5,
+    months: [3, 4, 5]
   },
   {
     name: "Sarit Gat",
@@ -403,6 +425,7 @@ let chili = [
                    <p>lange, gelbe feste Früchte</p>
                    <p>D sehr ertragreich </p>`,
     img: "../img/plants/Sarit_Gat.png",
-    price: 4.5
+    price: 4.5,
+    months: [3, 4, 5]
   }
 ]
