@@ -166,14 +166,24 @@ let herbs = [
   },
   {
     name: "Marrokanische Minze",
-    beschreibung: `!!!`,
+    beschreibung: `<p>Sonnig bis halbschattig</p>
+                <p>Mehrjährig, winterhart</p>
+                <p>Intensives Minzaroma, ideal für Tee</p>
+                <p>Wächst buschig und kräftig</p>
+                <p>Frisch oder getrocknet verwendbar</p>
+                <p>Wirkung: erfrischend, verdauungsfördernd</p>`,
     img: "../img/plants/Marokanische_Minze.png",
     price: 4,
     months: [2, 3, 4, 5, 6]
   },
   {
     name: "Ananassalbei",
-    beschreibung: `!!!`,
+    beschreibung: `<p>Sonniger Standort bevorzugt</p>
+                <p>Einjährig bis bedingt winterhart</p>
+                <p>Duftet angenehm nach Ananas</p>
+                <p>Leuchtend rote Blüten, essbar</p>
+                <p>Verwendung in Obstsalaten, Desserts, Tees</p>
+                <p>Wirkung: beruhigend, leicht antibakteriell</p>`,
     img: "../img/plants/Ananassalbei.png",
     price: 4,
     months: [2, 3, 4, 5, 6]
