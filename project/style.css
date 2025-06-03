@@ -170,7 +170,12 @@ a{
     object-fit: cover;
 }
 
-
+#imgEnd{
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+}
 /*Betrieb*/
 .person{
     display: flex;
@@ -613,11 +618,13 @@ a{
     
     /*Startseite*/
     #boxen-mit-Bild{
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         margin: 2%;
-    
     }
 
+    #boxen-mit-Bild img{
+        height: auto;
+    }
     .box{
         width: 100%;  
     }
@@ -639,11 +646,14 @@ a{
         width: 100%;
     }
 
+    #imgEnd{
+        width: 100%;
+        margin-bottom: -1%;
+    }
     /*Produkte*/
     
     #options{
         position: relative;
-        /*display: none;*/
     }
     
     .product {
