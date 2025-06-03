@@ -179,6 +179,7 @@ function showQRCode() {
   });
   console.log(url)
 }
+
 window.onload = function () {
   const params = new URLSearchParams(window.location.search);
   const jsonData = params.get("json");
